@@ -4,10 +4,8 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 # Upgrade chocolatey
 choco upgrade -y chocolatey
 
-# Loops through the contents of 'packages.config'
+# Loops through the contents of 'packages.config' and
+# install all packages listed in it, accepting their agreements
 foreach($line in Get-Content .\packages.config){
-  $packages += $line + " "
+  choco install -y $line
 }
-
-# Install all packages listed in 'packages.config', accepting their agreements
-choco install -y $packages
