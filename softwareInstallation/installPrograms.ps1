@@ -9,3 +9,6 @@ choco upgrade -y chocolatey
 foreach($line in Get-Content .\packages.config){
   choco install -y $line
 }
+
+# Upgrade all packages
+choco upgrade all
