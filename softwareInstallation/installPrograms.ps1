@@ -7,7 +7,9 @@ choco upgrade -y chocolatey
 # Loops through the contents of 'packages.config' and
 # install all packages listed in it, accepting their agreements
 foreach($line in Get-Content .\packages.config){
-  choco install -y $line
+  if ($line.SubString(0,1) -ne '#'){
+    choco install -y $line 
+  }
 }
 
 # Upgrade all packages
