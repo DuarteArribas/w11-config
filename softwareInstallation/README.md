@@ -60,3 +60,14 @@ To update all packages, execute `updatePrograms.ps1`:
 ```powershell
   .\updatePrograms.ps1
 ```
+
+## Manual installation
+
+The following programs I usually also install, but need to be installed manually:
+
+```
+League of Legends (Riot client)
+Battle.net
+Epic games
+Rainmeter
+```
