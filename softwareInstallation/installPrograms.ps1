@@ -7,9 +7,8 @@ if(!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::
 # Install chocolatey if it is not yet installed
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-# Prevent confirmation boxes from showing up, which prevents script automation
+# Prevent confirmation boxes from showing up, which allows script automation without user interaction
 choco feature enable -n=allowGlobalConfirmation
-
 
 # Upgrade chocolatey
 choco upgrade -y chocolatey
