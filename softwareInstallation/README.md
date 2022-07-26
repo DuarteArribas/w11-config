@@ -1,12 +1,14 @@
 # Software Installation
 
 Installing software is a tedious, repetitive and prone-to-errors process. Using the *[Chocolatey](https://chocolatey.org/)* package manager, it is possible to automate software **installation** and **upgrading**.
+
 ## Disclaimer
 
 This script was made for my own use and, although tested, may cause unwanted behavior for some people. Use at your own risk.
-## Run
 
-Clone the project:
+## Run program installation
+
+Clone the project if it is not cloned already:
 
 ```bash
   git clone git@github.com:DuarteArribas/w11-config.git
@@ -43,4 +45,18 @@ To actually install the packages, run powershell and execute `installPrograms.ps
 
 ```powershell
   .\installPrograms.ps1
+```
+
+## Run program updating
+
+Go to the project directory:
+
+```bash
+  cd softwareInstallation
+```
+
+To update all packages, execute `updatePrograms.ps1`:
+
+```powershell
+  .\updatePrograms.ps1
 ```
