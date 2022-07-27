@@ -11,13 +11,13 @@ This script was made for my own use and, although tested, may cause unwanted beh
 Clone the project if it is not cloned already:
 
 ```bash
-  git clone git@github.com:DuarteArribas/w11-config.git
+git clone git@github.com:DuarteArribas/w11-config.git
 ```
 
 Go to the project directory:
 
 ```bash
-  cd softwareInstallation
+cd softwareInstallation
 ```
 
 Change the file `packages.config` to include the packages you want to install. Packages that should **not** be installed should be commented, by prefixing the package with a `#`. E.G.:
@@ -44,7 +44,7 @@ In the previous example, **google chrome**, **opera**, **7zip** and **winrar** w
 To actually install the packages, run powershell and execute `installPrograms.ps1`:
 
 ```powershell
-  .\installPrograms.ps1
+.\installPrograms.ps1
 ```
 
 ## Run program updating
@@ -52,13 +52,13 @@ To actually install the packages, run powershell and execute `installPrograms.ps
 Go to the project directory:
 
 ```bash
-  cd softwareInstallation
+cd softwareInstallation
 ```
 
 To update all packages, execute `updatePrograms.ps1`:
 
 ```powershell
-  .\updatePrograms.ps1
+.\updatePrograms.ps1
 ```
 
 ## Manual installation
