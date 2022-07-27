@@ -34,5 +34,11 @@ foreach($line in Get-Content $packagesPath){
 choco upgrade all
 
 # Install office
-$officePath\setup.exe /download configuration-Office365-x64.xml
-$officePath\setup.exe /configure configuration-Office365-x64.xml
+if([System.Environment]::Is64BitOperatingSystem){
+  $officePath\setup.exe /download configuration-Office365-x64.xml
+  $officePath\setup.exe /configure configuration-Office365-x64.xml  
+}
+else{
+  $officePath\setup.exe /download configuration-Office365-x86.xml
+  $officePath\setup.exe /configure configuration-Office365-x86.xml
+}
