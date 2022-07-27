@@ -35,10 +35,13 @@ choco upgrade all
 
 # Install office
 if([System.Environment]::Is64BitOperatingSystem){
-  $officePath\setup.exe /download configuration-Office365-x64.xml
-  $officePath\setup.exe /configure configuration-Office365-x64.xml  
+  Write-Output("Installing office 64bit...")
+  .\$officePath\setup.exe /download configuration-Office365-x64.xml
+  .\$officePath\setup.exe /configure configuration-Office365-x64.xml 
 }
 else{
-  $officePath\setup.exe /download configuration-Office365-x86.xml
-  $officePath\setup.exe /configure configuration-Office365-x86.xml
+  Write-Output("Installing office 32bit...")
+  .\$officePath\setup.exe /download configuration-Office365-x86.xml
+  .\$officePath\setup.exe /configure configuration-Office365-x86.xml
 }
+Remove-Item "$officePath\office" -Recurse
