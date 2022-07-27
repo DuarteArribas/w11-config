@@ -34,6 +34,5 @@ foreach($line in Get-Content $packagesPath){
 choco upgrade all
 
 # Install office
-cd $officePath
-.\setup.exe /download configuration-Office365-x64.xml
-.\setup.exe /configure configuration-Office365-x64.xml
+$officePath\setup.exe /download configuration-Office365-x64.xml
+$officePath\setup.exe /configure configuration-Office365-x64.xml
