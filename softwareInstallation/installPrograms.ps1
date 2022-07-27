@@ -7,10 +7,11 @@ if(!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::
 # Get the absolute path to the packages configuration file
 foreach($path in Write-Output($PSCommandPath -split "\\")){
   if($path -ne "installPrograms.ps1"){
-    $packagesPath += $path + "\"
+    $softwareInstallation += $path + "\"
   }
 }
-$packagesPath += "packages.config"
+$packagesPath = $softwareInstallation + "packages.config"
+$officePath   = $softwareInstallation + "\ms-office"
 
 # Install chocolatey if it is not yet installed
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -31,3 +32,8 @@ foreach($line in Get-Content $packagesPath){
 
 # Upgrade all packages
 choco upgrade all
+
+# Install office
+cd $officePath
+.\setup.exe /download configuration-Office365-x64.xml
+.\setup.exe /configure configuration-Office365-x64.xml

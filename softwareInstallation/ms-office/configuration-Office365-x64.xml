@@ -1,0 +1,25 @@
+<!--
+  Comment the lines of the items you want to install and 
+  uncomment the lines of the items you do not want to install
+-->
+<Configuration>
+  <Add SourcePath="" OfficeClientEdition="64">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us"/>
+      <ExcludeApp ID="Access"/>
+      <!-- <ExcludeApp ID="Excel"/> -->
+      <ExcludeApp ID="Groove"/>
+      <ExcludeApp ID="InfoPath"/>
+      <ExcludeApp ID="Lync"/>
+      <ExcludeApp ID="OneNote"/>
+      <ExcludeApp ID="Outlook"/>
+      <!-- <ExcludeApp ID="PowerPoint"/> -->
+      <ExcludeApp ID="Project"/>
+      <ExcludeApp ID="Publisher"/>
+      <ExcludeApp ID="SharePointDesigner"/>
+      <ExcludeApp ID="Teams"/>
+      <ExcludeApp ID="Visio"/>
+      <!-- <ExcludeApp ID="Word"/> -->
+    </Product>
+  </Add>
+</Configuration>
