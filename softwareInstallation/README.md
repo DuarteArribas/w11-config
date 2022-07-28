@@ -43,6 +43,8 @@ In the previous example, **google chrome**, **opera**, **7zip** and **winrar** w
 
 Office is installed by default (read on to figure out how to not install it by default). If you wish to install office, change the `configuration-Office365-x64.xml` file or the `configuration-Office365-x86.xml` file, depending if you have windows 32bit or 64bit and follow the intructions on the comment header, so that only the specific programs from the office suite that you wish are installed.
 
+Run `Set-ExecutionPolicy Bypass -Scope Process -Force`, so that the script can be executed.
+
 To actually install the packages, run powershell and execute `installPrograms.ps1`:
 
 ```powershell
