@@ -38,9 +38,13 @@ else{
 # == Install other applications ==
 # Rerun this script as administrator if it is not already
 if(!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]"Administrator")){
+  Write-Output("This shell does not have administrative privileges. Rerunning in administrative mode...")
   Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
   Exit
 }
+
+# Print installing other packages
+Write-Output("Installing other packages...")
 
 # Get the absolute path to the packages configuration file
 foreach($path in Write-Output($PSCommandPath -split "\\")){
@@ -66,6 +70,9 @@ foreach($line in Get-Content $packagesPath){
     choco install -y $line
   }
 }
+
+# Print updating other packages
+Write-Output("Updating all packages...")
 
 # Upgrade all packages
 choco upgrade all
