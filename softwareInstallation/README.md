@@ -46,10 +46,13 @@ Office is installed by default (read on to figure out how to not install it by d
 To actually install the packages, run powershell and execute `installPrograms.ps1`:
 
 ```powershell
-.\installPrograms.ps1 [-office]
+.\installPrograms.ps1 [-office] [-wsl]
 ```
 
 The `-office` flag, when specified with false, will make it so that office is not installed.
+The `-wsl` flag, when specified with false, will make it so that wsl is not installed.
+
+This script will reboot the PC a couple times (depending on the software you wish to install, but at least one time at the end). If the script finishes executing (i.e., the message saying that all the installations were complete is shown), then the script does not need to be ran anymore; if not, then the reboots may be needed reboots in the middle of the script, hence the script needs to be rerun.
 
 ## Run program updating
 
