@@ -14,6 +14,8 @@ Clone the project if it is not cloned already:
 git clone git@github.com:DuarteArribas/w11-config.git
 ```
 
+Alternatively, download the zip and unzip it for windows.
+
 Go to the project directory:
 
 ```bash
