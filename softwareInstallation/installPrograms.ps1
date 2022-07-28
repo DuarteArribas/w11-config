@@ -1,7 +1,23 @@
 # == Command-line arguments
 param(
   [string]$office
+  [string]$wsl
 )
+# == Install wsl ==
+# Install wsl if wsl is not installed and if the wsl flag is not false
+$isWslInstalled = wsl -l -v
+if($isWslInstalled -eq $null -and $wsl -ne "false" -and $wsl -ne "False"){
+  # Print wsl installing output
+  Write-Output("Wsl is not installed. Installing wsl...")
+  wsl --install
+  Write-Output("Wsl is now installed. The PC needs to be rebooted. Rebooting in 3 seconds...")
+  Start-Sleep -Seconds 3
+  Restart-Computer
+}
+else{
+  # Print wsl already installed or not to be installed output
+  Write-Output("Wsl is already installed or is not to be installed. Proceeding...")
+}
 # == Install office ==
 # Install office if office is not installed and if the office flag is not false
 $isOfficeInstalled = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\O365ProPlusRetail* | Select-Object DisplayName,DisplayVersion,Publisher
