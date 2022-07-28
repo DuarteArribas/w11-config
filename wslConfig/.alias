@@ -1,0 +1,10 @@
+alias df='df -h'
+alias free='free -h'
+alias diskspace="du -S | sort -n -r |more"
+alias ll='ls -AlF'
+alias lsd="ls -alF | grep /$"
+alias la='ls -A'
+alias cDoc='cd /mnt/d/duart/Documents'
+alias cDesk='cd /mnt/d/duart/Desktop'
+alias rmf='rm -rf'
+alias download="wget --random-wait -r -p --no-parent -e robots=off -U mozilla"
