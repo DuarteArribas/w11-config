@@ -41,13 +41,15 @@ winrar
 
 In the previous example, **google chrome**, **opera**, **7zip** and **winrar** would have been installed.
 
-If you wish to install office, change the `configuration-Office365-x64.xml` file or the `configuration-Office365-x86.xml` file, depending if you have windows 32bit or 64bit and follow the intructions on the comment header.
+Office is installed by default (read on to figure out how to not install it by default). If you wish to install office, change the `configuration-Office365-x64.xml` file or the `configuration-Office365-x86.xml` file, depending if you have windows 32bit or 64bit and follow the intructions on the comment header, so that only the specific programs from the office suite that you wish are installed.
 
 To actually install the packages, run powershell and execute `installPrograms.ps1`:
 
 ```powershell
-.\installPrograms.ps1
+.\installPrograms.ps1 [-office]
 ```
+
+The `-office` flag, when specified with false, will make it so that office is not installed.
 
 ## Run program updating
 

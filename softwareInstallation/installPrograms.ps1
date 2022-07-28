@@ -1,7 +1,11 @@
+# == Command-line arguments
+param(
+  [string]$office
+)
 # == Install office ==
-# Install office if office is not installed
+# Install office if office is not installed and if the office flag is not false
 $isOfficeInstalled = Get-ItemProperty HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\O365ProPlusRetail* | Select-Object DisplayName,DisplayVersion,Publisher
-if($isOfficeInstalled -eq $null){
+if($isOfficeInstalled -eq $null -and $office -ne "false" -and $office -ne "False"){
   # Print office installing output
   Write-Output("Office is not installed. Installing office...")
   # Check if the Office installation directory
@@ -27,8 +31,8 @@ if($isOfficeInstalled -eq $null){
   Remove-Item Office -Recurse
 }
 else{
-  # Print office already installed output
-  Write-Output("Office is already installed. Proceeding...")
+  # Print office already installed or not to be installed output
+  Write-Output("Office is already installed or is not to be installed. Proceeding...")
 }
 
 # == Install other applications ==
