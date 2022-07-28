@@ -41,6 +41,8 @@ winrar
 
 In the previous example, **google chrome**, **opera**, **7zip** and **winrar** would have been installed.
 
+If you wish to install office, change the `configuration-Office365-x64.xml` file or the `configuration-Office365-x86.xml` file, depending if you have windows 32bit or 64bit and follow the intructions on the comment header.
+
 To actually install the packages, run powershell and execute `installPrograms.ps1`:
 
 ```powershell
