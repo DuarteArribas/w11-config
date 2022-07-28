@@ -1,6 +1,6 @@
 # == Command-line arguments
 param(
-  [string]$office
+  [string]$office,
   [string]$wsl
 )
 # == Install wsl ==
@@ -94,6 +94,6 @@ Write-Output("Updating all packages...")
 choco upgrade all
 
 # Complete installations and reboot the PC
-Write-Output("All installations were complete and all packages were updated! The system will be rebooted in 3 seconds, so that some cleanups are made.")
-Start-Sleep -Seconds 3
+Write-Output("All installations were complete and all packages were updated! The system will be rebooted in 10 seconds, so that some cleanups are made.")
+Start-Sleep -Seconds 10
 Restart-Computer
