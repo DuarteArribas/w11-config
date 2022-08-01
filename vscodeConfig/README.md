@@ -8,7 +8,7 @@ This script was made for my own use and, although tested, may cause unwanted beh
 
 ## Activity Bar
 
-Right click the activity bar and unselect the `search` panel, as I don't think it is important..
+Right click the activity bar and unselect the `search` panel.
 
 ### Explorer
 
