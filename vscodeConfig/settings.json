@@ -132,5 +132,5 @@
   "editor.wordBasedSuggestions": true,
   "editor.wordBasedSuggestionsMode": "matchingDocuments",
   "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "off"
 }
