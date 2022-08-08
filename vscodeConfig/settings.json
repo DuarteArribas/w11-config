@@ -38,7 +38,7 @@
   "editor.glyphMargin"                                    : true,
   "editor.guides.bracketPairs"                            : false,
   "editor.guides.highlightActiveBracketPair"              : true,
-  "editor.guides.indentation"                             : true,
+  "editor.guides.indentation"                             : false,
   "editor.hover.enabled"                                  : true,
   "editor.hover.above"                                    : true,
   "editor.hover.delay"                                    : 300,
