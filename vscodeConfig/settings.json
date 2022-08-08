@@ -357,5 +357,13 @@
   "outline.showVariables"                                 : true,
   "pylint.args"                                           : [
     "--disable=C0103,W0311,C0301,C0303,C0114,R0913,R1705,R1710,R0902,W0702,W0150,C0201,C0206,C0200"
-  ]
+  ],
+  // == AutoDocstring ==
+  "autoDocstring.docstringFormat"                         : "numpy",
+  "autoDocstring.generateDocstringOnEnter"                : true,
+  "autoDocstring.guessTypes"                              : true,
+  "autoDocstring.includeExtendedSummary"                  : false,
+  "autoDocstring.includeName"                             : false,
+  "autoDocstring.quoteStyle"                              : "\"\"\"",
+  "autoDocstring.startOnNewLine"                          : false
 }
