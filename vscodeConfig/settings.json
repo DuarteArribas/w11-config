@@ -42,6 +42,8 @@
   "editor.hover.enabled"                                  : true,
   "editor.hover.above"                                    : true,
   "editor.hover.delay"                                    : 300,
+  "workbench.iconTheme"                                   : 
+    "material-icon-theme",
   "editor.hover.sticky"                                   : true,
   "editor.inlayHints.enabled"                             : "on",
   "editor.inlineSuggest.enabled"                          : true,
@@ -353,5 +355,5 @@
   "outline.showStrings"                                   : true,
   "outline.showStructs"                                   : true,
   "outline.showTypeParameters"                            : true,
-  "outline.showVariables"                                 : true,
+  "outline.showVariables": true,
 }
