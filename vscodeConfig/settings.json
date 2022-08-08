@@ -212,8 +212,7 @@
   "window.title"                                          : 
     "${dirty} Microsoft PowerPoint${separator}${rootName} ${dirty}",
   "window.titleBarStyle"                                  : "custom",
-  "window.titleSeparator"                                 : " - ",
-  "window.zoomLevel"                                      : 0.3,
+  "window.titleSeparator": " - ",
   // == Files ==
   "files.enableTrash"                                     : true,
   "files.encoding"                                        : "utf8",
@@ -355,5 +354,8 @@
   "outline.showStrings"                                   : true,
   "outline.showStructs"                                   : true,
   "outline.showTypeParameters"                            : true,
-  "outline.showVariables": true,
+  "outline.showVariables"                                 : true,
+  "pylint.args"                                           : [
+    "--disable=C0103,W0311,C0301,C0303,C0114,R0913,R1705,R1710,R0902,W0702,W0150,C0201,C0206,C0200"
+  ]
 }
