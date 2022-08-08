@@ -143,9 +143,11 @@
   "security.workspace.trust.emptyWindow"                  : true,
   "security.workspace.trust.enabled"                      : true,
   "security.workspace.trust.startupPrompt"                : "once",
-  "security.workspace.trust.untrustedFiles"               : "prompt"
+  "security.workspace.trust.untrustedFiles"               : "prompt",
   // == Workbench ==
-  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.activityBar.iconClickBehavior"               : "toggle",
+  "workbench.colorTheme"                                  :
+    "Community Material Theme Palenight",
   "workbench.commandPalette.history"                      : 50,
   "workbench.commandPalette.preserveInput"                : false,
   "workbench.editor.closeEmptyGroups"                     : true,
