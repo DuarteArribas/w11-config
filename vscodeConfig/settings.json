@@ -365,5 +365,18 @@
   "autoDocstring.includeExtendedSummary"                  : false,
   "autoDocstring.includeName"                             : false,
   "autoDocstring.quoteStyle"                              : "\"\"\"",
-  "autoDocstring.startOnNewLine"                          : false
+  "autoDocstring.startOnNewLine"                          : false,
+  // == Better comments ==
+  "better-comments.highlightPlainText"                    : true,
+  "better-comments.multilineComments"                     : true,
+  // == Hex editor ==
+  "hexeditor.columnWidth"                                 : 16,
+  "hexeditor.dataInspector.autoReveal"                    : true,
+  "hexeditor.defaultEndianness"                           : "little",
+  "hexeditor.inspectorType"                               : "aside",
+  "hexeditor.maxFileSize"                                 : 10,
+  "hexeditor.showDecodedText"                             : true,
+  // == Markdown preview enhanced ==
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "path-intellisense.autoTriggerNextSuggestion"           : true
 }
