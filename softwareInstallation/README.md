@@ -77,9 +77,5 @@ To update all packages, execute `updatePrograms.ps1`:
 The following programs I usually also install, but need to be installed manually:
 
 ```
-League of Legends (Riot client)
 Battle.net
-Epic games
-Rainmeter
-GoogleDrive
 ```
