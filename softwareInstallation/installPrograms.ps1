@@ -69,6 +69,9 @@ foreach($path in Write-Output($PSCommandPath -split "\\")){
   }
 }
 $packagesPath = $softwareInstallation + "packages.config"
+$fontsPath    = $softwareInstallation + "fonts"
+$ps1Path      = $softwareInstallation + "updatePrograms.ps1"
+$cmdPath      = $softwareInstallation + "updatePrograms.cmd"
 
 # Install chocolatey if it is not yet installed
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
@@ -98,13 +101,20 @@ Write-Output("Installing fonts...")
 
 # Install fonts
 $fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
-foreach ($file in gci fonts\*){
+foreach ($file in gci $fontsPath\*){
   $fileName = $file.Name
   if(-not(Test-Path -Path "C:\Windows\fonts\$fileName")){
     dir $file | %{$fonts.CopyHere($_.fullname)}
   }
 }
-cp fonts\* c:\windows\fonts\
+cp $fontsPath\* C:\windows\fonts\
+
+# Print adding updates to startup
+Write-Output("Adding updates to startup")
+
+# Add update to startup
+cp $ps1Path "C:\updatePrograms.ps1"
+cp $cmdPath "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
 
 # Complete installations and reboot the PC
 Write-Output("All installations were complete and all packages were updated! The system will be rebooted in 10 seconds, so that some cleanups are made.")
