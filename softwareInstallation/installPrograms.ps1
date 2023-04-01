@@ -97,7 +97,14 @@ choco upgrade all
 Write-Output("Installing fonts...")
 
 # Install fonts
-
+$fonts = (New-Object -ComObject Shell.Application).Namespace(0x14)
+foreach ($file in gci fonts\*){
+  $fileName = $file.Name
+  if(-not(Test-Path -Path "C:\Windows\fonts\$fileName")){
+    dir $file | %{$fonts.CopyHere($_.fullname)}
+  }
+}
+cp fonts\* c:\windows\fonts\
 
 # Complete installations and reboot the PC
 Write-Output("All installations were complete and all packages were updated! The system will be rebooted in 10 seconds, so that some cleanups are made.")
