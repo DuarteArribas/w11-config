@@ -2,7 +2,8 @@
 	name = DuarteArribas
 	email = duarte.a.arribas@gmail.com
 [core]
-	editor = vim
+	editor = code --wait
+	whitespace = -trailing-space
 [init]
 	defaultBranch = main
 [alias]
@@ -11,3 +12,6 @@
 	ca = commit --amend
 	st = status
 	br = branch
+[status]
+  submoduleSummary = true
+  showUntrackedFiles = all
