@@ -1,9 +1,13 @@
 [user]
-	name = YozNacks
+	name = DuarteArribas
 	email = duarte.a.arribas@gmail.com
 [core]
 	editor = vim
 [init]
-	defaultBranch = master
-[credential "https://github.com"]
-	duartearribas = a
+	defaultBranch = main
+[alias]
+	a  = add
+	c  = commit
+	ca = commit --amend
+	st = status
+	br = branch
