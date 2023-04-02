@@ -10,6 +10,7 @@ if($isWslInstalled -eq $null -and $wsl -ne "false" -and $wsl -ne "False"){
   # Print wsl installing output
   Write-Output("Wsl is not installed. Installing wsl...")
   wsl --install -d kali-linux
+  wsl --set-default-version 2
   Write-Output("Wsl is now installed. The PC needs to be rebooted. Rebooting in 3 seconds...")
   Start-Sleep -Seconds 3
   Restart-Computer
