@@ -1,0 +1,12 @@
+format = """
+$directory\
+$docker_context\
+$c\
+$java\
+$python\
+"""
+
+[directory]
+format = '[$path]($style)[$read_only]($read_only_style) '
+read_only = "🔒"
+truncate_to_repo = false

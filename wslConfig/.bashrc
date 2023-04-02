@@ -68,3 +68,6 @@ mkg(){
 	mkdir -p $1
 	cd $1
 }
+
+# Prompt
+eval "$(starship init bash)"

@@ -13,5 +13,6 @@ sudo apt install python3
 sudo apt install python3-pip
 sudo apt install postgresql
 sudo apt install openvpn
+curl -sS https://starship.rs/install.sh | sh
 sudo apt update && sudo apt upgrade
 echo "Packages successfully installed!"
