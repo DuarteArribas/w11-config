@@ -14,7 +14,7 @@ Clone the project if it is not cloned already:
 git clone git@github.com:DuarteArribas/w11-config.git
 ```
 
-Alternatively, download the zip and unzip it for windows.
+Alternatively, download the zip and unzip it.
 
 Go to the project directory:
 
@@ -50,11 +50,15 @@ Run `Set-ExecutionPolicy Bypass -Scope Process -Force`, so that the script can b
 To actually install the packages, run powershell and execute `installPrograms.ps1`:
 
 ```powershell
-.\installPrograms.ps1 [-office] [-wsl]
+.\installPrograms.ps1 [-office] [-wsl] [-sb] [-hv] [-hp] [-vmp]
 ```
 
 The `-office` flag, when specified with false, will make it so that office is not installed.
 The `-wsl` flag, when specified with false, will make it so that wsl is not installed.
+The `-sb` flag, when specified with false, will make it so that windows sandbox is not installed.
+The `-hv` flag, when specified with false, will make it so that hyper-v is not installed.
+The `-hp` flag, when specified with false, will make it so that hypervisor platform is not installed.
+The `-vmp` flag, when specified with false, will make it so that virtual machine platform is not installed.
 
 This script will reboot the PC a couple times (depending on the software you wish to install, but at least one time at the end). If the script finishes executing (i.e., the message saying that all the installations were complete is shown), then the script does not need to be ran anymore; if not, then the reboots may be needed reboots in the middle of the script, hence the script needs to be rerun.
 

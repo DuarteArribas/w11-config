@@ -30,6 +30,7 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Aliases
+alias grep='grep --color=auto'
 alias crc='cat ~/.bashrc'
 alias date='date "+%Y-%m-%d %T"'
 alias ps='ps auxf'
@@ -63,6 +64,7 @@ cpp(){
 		}
 	END { print "" }' total_size=$(stat -c '%s' "${1}") count=0
 }
+
 # Create and go to the directory
 mkg(){
 	mkdir -p $1

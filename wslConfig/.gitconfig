@@ -1,6 +1,6 @@
 [user]
-	name = DuarteArribas
-	email = duarte.a.arribas@gmail.com
+	name = ChangeName
+	email = changeEmail@gmail.com
 [core]
 	editor = code --wait
 	whitespace = -trailing-space
