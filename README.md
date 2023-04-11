@@ -9,7 +9,7 @@ Go to `Computer Management -> Disk Management` and allocate unallocated disks.
 Change the disk names.
 
 ## Installations
-Follow the rules in [softwareInstallation](softwareInstallation/README.md).
+Follow the steps in [softwareInstallation](softwareInstallation/README.md).
 
 ### Configure
 Configure each app.
@@ -46,7 +46,7 @@ Log in.
 Log in.
 
 #### Vscode
-Follow the rules in [vscodeConfig](vscodeConfig/README.md).
+Follow the steps in [vscodeConfig](vscodeConfig/README.md).
 
 #### PowerToys
 
@@ -121,6 +121,8 @@ Open `Nvidia Control Panel` and change `Power Management Mode` to `Prefer Maximu
 Sync Windows settings.
 
 ## WSL
+Follow the steps in [wslConfig](wslConfig/README.md).
+
 
 ## Windows Terminal
 

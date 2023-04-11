@@ -18,4 +18,5 @@ echo "Copying files..."
 sudo cp .gitconfig .bashrc ~
 sudo mkdir ~/.config
 sudo cp starship.toml ~/.config
+touch ~/.hushlogin
 echo "Files successfully copied!"
