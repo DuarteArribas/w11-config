@@ -8,6 +8,13 @@ Go to `Computer Management -> Disk Management` and allocate unallocated disks.
 
 Change the disk names.
 
+## Folders
+Copy the needed folders.
+Change each default folder (documents, music, etc.) from the SSD to the HDD, unpin them and pin the needed ones.
+
+## Utilities
+Show file extensions.
+
 ## Installations
 Follow the steps in [softwareInstallation](softwareInstallation/README.md).
 
@@ -123,8 +130,8 @@ Sync Windows settings.
 ## WSL
 Follow the steps in [wslConfig](wslConfig/README.md).
 
-
 ## Windows Terminal
+Follow the steps in [winTerminalConfig](winTerminalConfig/README.md).
 
 ## Customize Desktop
 
