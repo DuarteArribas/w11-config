@@ -134,10 +134,13 @@ Follow the steps in [wslConfig](wslConfig/README.md).
 Follow the steps in [winTerminalConfig](winTerminalConfig/README.md).
 
 ## Customize Desktop
+Install Wallpaper Engine and choose a wallpaper.
+Install TranslucentTB and make the taskbar transparent.
 
 ## Default applications
+Set the default apps to the needed ones.
 
 ## Startup Apps
+Delete unnecessary apps for the startup.
 
 ## Cleanups
-
