@@ -163,10 +163,16 @@ cp $fontsPath\* C:\windows\fonts\
 
 # == Add update to startup ==
 # Print adding updates to startup
-Write-Output("Adding updates to startup")
+Write-Output("Adding updates to startup...")
 # Actually add updates to startup
 cp $ps1Path "C:\updatePrograms.ps1"
 cp $cmdPath "C:\Users\$env:UserName\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\"
+
+# == Restore old right click menu ==
+# Print restoring old right click menu
+Write-Output("Restoring old right click menu...")
+# Actually restore old right click menu
+reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
 
 # == Complete installations and reboot the PC ==
 Write-Output("All installations were complete and all packages were updated! The system will be rebooted in 10 seconds, so that some cleanups are made.")
