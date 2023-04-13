@@ -57,6 +57,8 @@ alias drm='docker rm'
 alias drma='docker container prune'
 alias dport='docker port'
 alias dstop='docker stop'
+alias dimage='docker images'
+alias dbuild='docker build'
 
 # Functions
 # Copy a file with progress bar
