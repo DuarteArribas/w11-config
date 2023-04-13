@@ -43,6 +43,10 @@ alias ll='ls -l'
 alias f="find . | grep "
 alias countfiles="for t in files links directories; do echo \`find . -type \${t:0:1} | wc -l\` \$t; done 2> /dev/null"
 alias mk='mkdir'
+# Docker
+alias drm='docker rm'
+alias drma='docker rm $(docker ps -a -q -f status=exited)'
+alias dps='docker ps -a'
 
 # Functions
 # Copy a file with progress bar
