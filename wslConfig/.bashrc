@@ -30,21 +30,27 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Aliases
-alias grep='grep --color=auto'
+# Bashrc
 alias crc='cat ~/.bashrc'
+alias erc='code ~/.bashrc'
+alias src='source ~/.bashrc'
+# Redo
+alias grep='grep --color=auto'
 alias date='date "+%Y-%m-%d %T"'
 alias ps='ps auxf'
-alias c='clear'
 alias apt='sudo apt'
+# Errors
 alias cd..='cd ..'
 alias ..='cd ..'
+# Useful shortcuts
 alias la='ls -Ah'
 alias ll='ls -l'
 alias f="find . | grep "
+alias c='clear'
 alias countfiles="for t in files links directories; do echo \`find . -type \${t:0:1} | wc -l\` \$t; done 2> /dev/null"
-alias mk='mkdir'
 # Docker
 alias drun='docker run'
+alias drun1='docker run --rm'
 alias drm='docker rm'
 alias drma='docker rm $(docker ps -a -q -f status=exited)'
 alias dps='docker ps -a'
