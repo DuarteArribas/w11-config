@@ -52,7 +52,7 @@ alias countfiles="for t in files links directories; do echo \`find . -type \${t:
 alias drun='docker run'
 alias drun1='docker run --rm'
 alias drm='docker rm'
-alias drma='docker rm $(docker ps -a -q -f status=exited)'
+alias drma='docker container prune'
 alias dps='docker ps -a'
 
 # Functions
