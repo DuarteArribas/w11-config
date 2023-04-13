@@ -51,9 +51,10 @@ alias countfiles="for t in files links directories; do echo \`find . -type \${t:
 # Docker
 alias drun='docker run'
 alias drun1='docker run --rm'
+alias dpull='docker pull'
+alias dps='docker ps -a'
 alias drm='docker rm'
 alias drma='docker container prune'
-alias dps='docker ps -a'
 
 # Functions
 # Copy a file with progress bar
