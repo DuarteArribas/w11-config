@@ -49,12 +49,14 @@ alias f="find . | grep "
 alias c='clear'
 alias countfiles="for t in files links directories; do echo \`find . -type \${t:0:1} | wc -l\` \$t; done 2> /dev/null"
 # Docker
-alias drun='docker run'
+alias drun='docker run -d'
 alias drun1='docker run --rm'
 alias dpull='docker pull'
 alias dps='docker ps -a'
 alias drm='docker rm'
 alias drma='docker container prune'
+alias dport='docker port'
+alias dstop='docker stop'
 
 # Functions
 # Copy a file with progress bar
