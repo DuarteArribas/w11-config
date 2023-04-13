@@ -49,7 +49,8 @@ alias f="find . | grep "
 alias c='clear'
 alias countfiles="for t in files links directories; do echo \`find . -type \${t:0:1} | wc -l\` \$t; done 2> /dev/null"
 # Docker
-alias drun='docker run -d'
+alias drun='docker run'
+alias drund='docker run -d'
 alias drun1='docker run --rm'
 alias dpull='docker pull'
 alias dps='docker ps -a'
