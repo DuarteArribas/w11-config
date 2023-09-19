@@ -9,6 +9,7 @@ sudo apt -y install net-tools
 sudo apt -y install nasm
 sudo apt -y install python3
 sudo apt -y install python3-pip
+sudo apt -y install python3-sphinx
 sudo apt -y install postgresql
 sudo apt -y install openvpn
 sudo apt -y install kali-linux-core

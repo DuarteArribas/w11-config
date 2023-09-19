@@ -74,5 +74,12 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.inlineSuggest.enabled": true,
-  "arduino.useArduinoCli": true
+  "arduino.useArduinoCli": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false,
+    "scminput": false
+  },
 }
